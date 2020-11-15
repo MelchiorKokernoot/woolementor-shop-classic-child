@@ -8,3 +8,5 @@ Added features:
 Please note!
 Changes in style.css are not visible unless debug mode is enabled.
 Please make changes to css in this file, and then minify the file to reflect changes in prod environment.
+
+
