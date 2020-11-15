@@ -1982,7 +1982,6 @@ class Shop_Classic extends Widget_Base {
                                 <?php endif ?>
 
 								<div class="wl-sc-product-details">
-
                                     <?php if ( 'yes' == $image_show_hide ): ?>
                                         <div class="wl-sc-product-img">
                                             <?php if ( 'none' == $image_on_click ): ?>
@@ -1997,13 +1996,12 @@ class Shop_Classic extends Widget_Base {
 
                                         </div>
                                     <?php endif ?>
-
 									<div class="wl-sc-product-info">
 										<div class="wl-sc-product-name"><a <?php echo $this->get_render_attribute_string( 'title_gradient_color' ); ?> href="<?php the_permalink(); ?>"><?php echo esc_html( $product->get_name() ); ?></a></div>
                                         <p>
                                             <?php the_content() ?>
                                         </p>
-                                        <h2 class="wl-sc-price" style="color: black;"><?php echo $product->get_price_html(); ?></h2>
+                                        <h2 class="wl-sc-price"><?php echo $product->get_price_html(); ?></h2>
 									</div>
 									<div class="wl-sc-info-icons">
 										<?php if ( 'yes' == $wishlist_show_hide ): ?>
